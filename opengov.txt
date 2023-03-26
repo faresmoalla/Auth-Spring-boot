@@ -1,0 +1,56 @@
+
+
+///////////////////////////////
+
+
+INSERT INTO roles(name) VALUES('ROLE_USER');
+INSERT INTO roles(name) VALUES('ROLE_MODERATOR');
+INSERT INTO roles(name) VALUES('ROLE_ADMIN');
+
+
+http://localhost:8081/api/auth/signup
+
+
+{
+"username":"zzz",
+"email":"zzz@bezkoder.com",
+"password":"12345678",
+"role":["mod","user"]
+}
+
+
+
+http://localhost:8081/api/auth/signin
+{
+"username":"mod",
+"password":"12345678"
+}
+
+
+
+
+
+http://localhost:8081/rendezvous/add-rendezvous
+{
+  "nom": "string",
+  "prenom": "string",
+  "tel": "string",
+  "dateRendezVous": "2023-03-18T17:43:56.125Z",
+  "email": "string"
+}
+
+
+http://localhost:8081/rendezvous/listRendezVous
+
+
+
+http://localhost:8081/rendezvous/getRendezVous/1
+
+
+http://localhost:8081/rendezvous/deleteRendezVous/1
+
+
+
+http://localhost:8081/location
+
+
